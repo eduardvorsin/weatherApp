@@ -41,5 +41,48 @@
     "jest-environment-jsdom": "^29.3.1",
     "msw": "^0.49.2",
     "vite": "^4.0.0"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "modulePaths": [],
+    "moduleNameMapper": {
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+      "\\.svg": "<rootDir>src/__mocks__/svg.jsx",
+      "\\.(css|less)$": "<rootDir>src/__mocks__/styleMock.js"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "resetMocks": true
   }
 }
