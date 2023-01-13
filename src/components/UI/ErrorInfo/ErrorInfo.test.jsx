@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import ErrorInfo from './ErrorInfo';
-import { ReactComponent as MockIcon } from '../../../assets/icons/settings.svg';
+import { ReactComponent as MockIcon } from '../../../../public/assets/icons/cloudy.svg';
 
 describe('ErrorInfo component tests', () => {
   it('renders correctly', () => {
