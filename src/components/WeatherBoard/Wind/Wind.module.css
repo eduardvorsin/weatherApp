@@ -1,0 +1,55 @@
+.wind {}
+
+.wind__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wind__speed,
+.wind__direction,
+.wind__title {
+  margin: 0;
+}
+
+.wind__title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 18px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wind__icon {
+  flex: 0 1 200px;
+  min-width: 150px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.wind__speed {
+  margin-bottom: 10px;
+}
+
+.wind__blades {
+  animation: rotation 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(min-width:577px) {
+  .wind__icon {
+    margin-right: 30px;
+  }
+}
