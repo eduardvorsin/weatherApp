@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component tests empty list snapshot 1`] = `
+<ul
+  class="list "
+/>
+`;
+
+exports[`List component tests snapshot of an ordered list 1`] = `
+<ol
+  class="list "
+>
+  <li
+    class="list__item"
+  >
+    bmw
+  </li>
+  <li
+    class="list__item"
+  >
+    nissan
+  </li>
+  <li
+    class="list__item"
+  >
+    toyota
+  </li>
+</ol>
+`;
+
+exports[`List component tests snapshot with mock data 1`] = `
+<ul
+  class="list "
+>
+  <li
+    class="list__item"
+  >
+    lion
+  </li>
+  <li
+    class="list__item"
+  >
+    tiger
+  </li>
+  <li
+    class="list__item"
+  >
+    cat
+  </li>
+</ul>
+`;
