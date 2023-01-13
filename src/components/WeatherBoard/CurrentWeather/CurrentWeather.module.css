@@ -1,0 +1,38 @@
+.current-weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.current-weather>*:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.current-weather__temperature {
+  font-size: 40px;
+  color: var(--brand-color);
+}
+
+.current-weather__windspeed {
+  font-size: 20px;
+}
+
+.current-weather__status {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.current-weather__status,
+.current-weather__temperature,
+.current-weather__windspeed {
+  margin: 0;
+}
+
+@media(min-width:577px) {
+  .current-weather__temperature {
+    font-size: 60px;
+  }
+}
