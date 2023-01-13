@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Humidity component tests snapshot with default data 1`] = `
+<div
+  class="humidity "
+  data-testid="humidity"
+>
+  <h3
+    class="humidity__title"
+  >
+    Относительная влажность
+  </h3>
+  <div
+    class="humidity__content"
+  >
+    <div
+      class="pie-chart humidity__pie-chart"
+      data-testid=""
+    >
+      <svg
+        class="pie-chart__icon"
+        fill="none"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          class="pie-chart__circle"
+          cx="255"
+          cy="255"
+          r="245.25"
+        />
+        <circle
+          class="pie-chart__circle"
+          cx="255"
+          cy="255"
+          r="245.25"
+          style="--value: 0;"
+        />
+      </svg>
+      <p
+        class="pie-chart__text"
+      >
+        0
+        %
+      </p>
+    </div>
+    <p
+      class="humidity__apparent-temperature"
+    >
+      Ощущаемая температура:
+       
+      0°
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Humidity component tests snapshot with mock text 1`] = `
+<div
+  class="humidity test-class"
+  data-testid="humidity"
+>
+  <h3
+    class="humidity__title"
+  >
+    Относительная влажность
+  </h3>
+  <div
+    class="humidity__content"
+  >
+    <div
+      class="pie-chart humidity__pie-chart"
+      data-testid=""
+    >
+      <svg
+        class="pie-chart__icon"
+        fill="none"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          class="pie-chart__circle"
+          cx="255"
+          cy="255"
+          r="245.25"
+        />
+        <circle
+          class="pie-chart__circle"
+          cx="255"
+          cy="255"
+          r="245.25"
+          style="--value: 80;"
+        />
+      </svg>
+      <p
+        class="pie-chart__text"
+      >
+        80
+        %
+      </p>
+    </div>
+    <p
+      class="humidity__apparent-temperature"
+    >
+      Ощущаемая температура:
+       
+      -17°
+    </p>
+  </div>
+</div>
+`;
