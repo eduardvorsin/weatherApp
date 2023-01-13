@@ -39,3 +39,34 @@ export const getWeatherStatusByCode = (code) => {
 
   return status;
 };
+
+export const getIconPathByCode = (code, basePath = '/assets/icons') => {
+  if (typeof basePath !== 'string') {
+    throw new Error('basePath parameter should be a string type');
+  }
+
+  if (typeof code !== 'number') {
+    throw new Error('code parameter should be a number type');
+  }
+
+  let path = '';
+
+  if (code === 0 || code === 1) {
+    path += 'sunny';
+  } else if (code === 2 || code === 3) {
+    path += 'cloudy';
+  } else if (code === 45) {
+    path += 'fog';
+  } else if ((code >= 48 && code <= 67) || (code >= 80 && code <= 86)) {
+    path += 'rain';
+  } else if (code >= 71 && code <= 77) {
+    path += 'snow';
+  } else if (code >= 95 && code <= 99) {
+    path += 'thunderstorm';
+  } else {
+    throw new Error('recived unknown weather code');
+  }
+
+  return `${basePath}/${path}.svg`;
+};
+
