@@ -157,3 +157,16 @@ export const createWeatherURL = (queries = {
 
   return url;
 };
+
+export const getCurrentISOTimeIndex = (timeArr) => {
+  if (!Array.isArray(timeArr)) throw new Error('passed argument must be an array');
+  if (timeArr.length === 0) return null;
+
+  const currentDate = new Date();
+  currentDate.setMinutes(0, 0);
+  const currentISOTime = currentDate.toISOString().slice(0, -8);
+
+  return timeArr.findIndex((timeMoment) => (
+    timeMoment === currentISOTime
+  ));
+};
