@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PieChart component tests snapshot with default value 1`] = `
+<div
+  class="pie-chart "
+  data-testid="pie-chart"
+>
+  <svg
+    class="pie-chart__icon"
+    fill="none"
+    viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      class="pie-chart__circle"
+      cx="255"
+      cy="255"
+      r="245.25"
+    />
+    <circle
+      class="pie-chart__circle"
+      cx="255"
+      cy="255"
+      r="245.25"
+      style="--value: 75;"
+    />
+  </svg>
+  <p
+    class="pie-chart__text"
+  >
+    75
+    %
+  </p>
+</div>
+`;
+
+exports[`PieChart component tests snapshot with mock value 1`] = `
+<div
+  class="pie-chart "
+  data-testid="pie-chart"
+>
+  <svg
+    class="pie-chart__icon"
+    fill="none"
+    viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      class="pie-chart__circle"
+      cx="255"
+      cy="255"
+      r="245.25"
+    />
+    <circle
+      class="pie-chart__circle"
+      cx="255"
+      cy="255"
+      r="245.25"
+      style="--value: 33;"
+    />
+  </svg>
+  <p
+    class="pie-chart__text"
+  >
+    33
+    %
+  </p>
+</div>
+`;
