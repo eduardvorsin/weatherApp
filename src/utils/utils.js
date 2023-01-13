@@ -201,3 +201,33 @@ export const normalizeHours = (data) => {
   const hours = Object.keys(data[0].data);
   return hours.map((timeMoment) => ({ name: timeMoment }));
 };
+
+export const normalizeHourlyWeather = (data) => {
+  if (!isObject(data)) {
+    throw new Error('the data parameter must be an object');
+  }
+
+  if (Object.keys(data).length === 0) return null;
+
+  const hoursInDay = 24;
+  const currentHour = new Date().getHours();
+  const hourlyWeather = [{ id: 0, data: {} }];
+
+  const startIndex = getCurrentISOTimeIndex(data.time);
+
+  if (startIndex < 0) return null;
+
+  for (let i = 0; i < hoursInDay; i += 1) {
+    const nextHour = currentHour + i;
+    const time = nextHour < hoursInDay
+      ? nextHour
+      : Math.abs(hoursInDay - nextHour);
+
+    hourlyWeather[0].data[`${time}:00`] = {
+      temperature: data.temperature_2m[startIndex + i],
+      weatherCode: data.weathercode[startIndex + i],
+    };
+  }
+
+  return hourlyWeather;
+};
