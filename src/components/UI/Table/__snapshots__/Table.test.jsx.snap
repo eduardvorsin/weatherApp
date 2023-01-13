@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table component tests snapshot of an empty table 1`] = `
+<table
+  class="table"
+>
+  <thead
+    class="table__head"
+  >
+    <tr
+      class="table__row"
+    />
+  </thead>
+  <tbody
+    class="table__body"
+  />
+</table>
+`;
+
+exports[`Table component tests snapshot with mock data 1`] = `
+<table
+  class="table"
+>
+  <thead
+    class="table__head"
+  >
+    <tr
+      class="table__row"
+    >
+      <th
+        class="table__head-cell"
+      >
+        animal1
+      </th>
+      <th
+        class="table__head-cell"
+      >
+        animal2
+      </th>
+      <th
+        class="table__head-cell"
+      >
+        animal3
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    class="table__body"
+  >
+    <tr
+      class="table__row"
+    >
+      <td
+        class="table__data-cell"
+      >
+        cat
+      </td>
+      <td
+        class="table__data-cell"
+      >
+        dog
+      </td>
+      <td
+        class="table__data-cell"
+      >
+        parrot
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
