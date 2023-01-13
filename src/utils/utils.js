@@ -70,3 +70,16 @@ export const getIconPathByCode = (code, basePath = '/assets/icons') => {
   return `${basePath}/${path}.svg`;
 };
 
+export const getFullDayDescription = (date) => {
+  if (Number.isNaN(new Date(date).getTime())) {
+    throw new Error('invalid date string passed');
+  }
+
+  const options = {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+  };
+
+  return new Intl.DateTimeFormat('ru-RU', options).format(new Date(date));
+};
