@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorInfo component tests shapshot with another heading level 1`] = `
+<div
+  class="error-info  "
+  data-testid="error-info"
+  role="alert"
+>
+  <h4
+    class="error-info__description"
+  >
+    an important error
+  </h4>
+</div>
+`;
+
+exports[`ErrorInfo component tests shapshot with default text 1`] = `
+<div
+  class="error-info  "
+  data-testid="error-info"
+  role="alert"
+>
+  <h6
+    class="error-info__description"
+  >
+    default message
+  </h6>
+</div>
+`;
+
+exports[`ErrorInfo component tests shapshot with isCentered props 1`] = `
+<div
+  class="error-info  error-info--center"
+  data-testid="error-info"
+  role="alert"
+>
+  <h6
+    class="error-info__description"
+  >
+    an important error
+  </h6>
+</div>
+`;
+
+exports[`ErrorInfo component tests shapshot with mock text 1`] = `
+<div
+  class="error-info  "
+  data-testid="error-info"
+  role="alert"
+>
+  <h6
+    class="error-info__description"
+  >
+    an important error
+  </h6>
+</div>
+`;
