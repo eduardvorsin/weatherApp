@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithInternetConnection component tests snapshot when internet is available 1`] = `
+<p>
+  test text
+</p>
+`;
+
+exports[`WithInternetConnection component tests snapshot when the internet is not available 1`] = `null`;
