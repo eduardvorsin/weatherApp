@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationInfo component tests snapshot with default data 1`] = `
+<p
+  class="location-info "
+  data-testid="location-info"
+>
+  <span
+    class="location-info__text"
+  />
+  <img
+    alt="location icon"
+    class="location-info__icon"
+    src="/assets/icons/location.svg"
+  />
+</p>
+`;
+
+exports[`LocationInfo component tests snapshot with mock text 1`] = `
+<p
+  class="location-info test-class"
+  data-testid="location-info"
+>
+  <span
+    class="location-info__text"
+  >
+    Лондон
+  </span>
+  <img
+    alt="location icon"
+    class="location-info__icon"
+    src="/assets/icons/location.svg"
+  />
+</p>
+`;
