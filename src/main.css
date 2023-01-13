@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color: hsl(0, 0%, 100%);
+  --brand-color-hover: hsl(0, 0%, 75%);
+  --brand-color-active: hsl(0, 0%, 90%);
+  --brand-color-disabled: hsl(0, 0%, 65%);
+  --secondary-color: hsl(0, 0%, 60%);
+  --error-color: hsl(349, 68%, 53%);
+  --error-bg-color: hsl(0, 86%, 89%);
+  --error-border-color: hsl(0, 86%, 72%);
+  --gradient-bg: linear-gradient(to right, hsl(198, 44%, 11%), hsl(195, 35%, 19%), hsl(198, 39%, 28%));
+}
+
+body {
+  margin: 0;
+  color: var(--brand-color);
+  overflow-wrap: break-word;
+  background: var(--gradient-bg);
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+.main__title {}
