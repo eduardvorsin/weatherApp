@@ -1,0 +1,1534 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherBoard component tests snapshot when the state is empty 1`] = `
+<div
+  class="weather-board "
+  data-testid="weather-board"
+>
+  <section
+    class="current-weather__section current-weather-section weather-board__current-weather"
+    data-testid=""
+  >
+    <h2
+      class="current-weather-section__title sr-only"
+    >
+      Текущая погода
+    </h2>
+    <div
+      aria-label="loading spinner"
+      class="spinner "
+      style="--size: 102px;"
+      title="loading spinner"
+    >
+      <div
+        class="spinner__ring"
+        style="--ring-size: 81.60000000000001px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 81.60000000000001px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 81.60000000000001px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 81.60000000000001px;"
+      />
+    </div>
+  </section>
+  <section
+    class="location__section location-section weather-board__location-info"
+    data-testid=""
+  >
+    <h2
+      class="location-section__title sr-only"
+    >
+      Ваш город
+    </h2>
+    <div
+      aria-label="loading spinner"
+      class="spinner "
+      style="--size: 74px;"
+      title="loading spinner"
+    >
+      <div
+        class="spinner__ring"
+        style="--ring-size: 59.2px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 59.2px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 59.2px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 59.2px;"
+      />
+    </div>
+  </section>
+  <section
+    class="hourly-weather__section hourly-weather-section weather-board__hourly-weather"
+    data-testid=""
+  >
+    <h2
+      class="hourly-weather-section__title sr-only"
+    >
+      Погода на ближайщие 24 часа
+    </h2>
+    <div
+      aria-label="loading spinner"
+      class="spinner "
+      style="--size: 207px;"
+      title="loading spinner"
+    >
+      <div
+        class="spinner__ring"
+        style="--ring-size: 165.60000000000002px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 165.60000000000002px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 165.60000000000002px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 165.60000000000002px;"
+      />
+    </div>
+  </section>
+  <section
+    class="daily-weather__section daily-weather-section weather-board__daily-weather"
+    data-testid=""
+  >
+    <h2
+      class="daily-weather-section__title sr-only"
+    >
+      Погода на неделю
+    </h2>
+    <div
+      aria-label="loading spinner"
+      class="spinner "
+      style="--size: 382px;"
+      title="loading spinner"
+    >
+      <div
+        class="spinner__ring"
+        style="--ring-size: 305.6px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 305.6px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 305.6px;"
+      />
+      <div
+        class="spinner__ring"
+        style="--ring-size: 305.6px;"
+      />
+    </div>
+  </section>
+  <section
+    class="weather-board__additional-info additional-info"
+  >
+    <h2
+      class="additional-info__title sr-only"
+    >
+      Информация об относительной влажности и ветре
+    </h2>
+    <div
+      class="humidity__section humidity-section weather-board__humidity"
+      data-testid=""
+    >
+      <div
+        aria-label="loading spinner"
+        class="spinner "
+        style="--size: 257px;"
+        title="loading spinner"
+      >
+        <div
+          class="spinner__ring"
+          style="--ring-size: 205.60000000000002px;"
+        />
+        <div
+          class="spinner__ring"
+          style="--ring-size: 205.60000000000002px;"
+        />
+        <div
+          class="spinner__ring"
+          style="--ring-size: 205.60000000000002px;"
+        />
+        <div
+          class="spinner__ring"
+          style="--ring-size: 205.60000000000002px;"
+        />
+      </div>
+    </div>
+    <div
+      class="wind__section wind-section weather-board__wind"
+      data-testid=""
+    >
+      <div
+        aria-label="loading spinner"
+        class="spinner "
+        style="--size: 246px;"
+        title="loading spinner"
+      >
+        <div
+          class="spinner__ring"
+          style="--ring-size: 196.8px;"
+        />
+        <div
+          class="spinner__ring"
+          style="--ring-size: 196.8px;"
+        />
+        <div
+          class="spinner__ring"
+          style="--ring-size: 196.8px;"
+        />
+        <div
+          class="spinner__ring"
+          style="--ring-size: 196.8px;"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`WeatherBoard component tests snapshot with error messages 1`] = `
+<div
+  class="weather-board "
+  data-testid="weather-board"
+>
+  <section
+    class="current-weather__section current-weather-section weather-board__current-weather"
+    data-testid=""
+  >
+    <h2
+      class="current-weather-section__title sr-only"
+    >
+      Текущая погода
+    </h2>
+    <div
+      class="error-info  "
+      data-testid=""
+      role="alert"
+    >
+      <h3
+        class="error-info__description"
+      >
+        Не удалось загрузить данные о текущей погоде
+      </h3>
+    </div>
+  </section>
+  <section
+    class="location__section location-section weather-board__location-info"
+    data-testid=""
+  >
+    <h2
+      class="location-section__title sr-only"
+    >
+      Ваш город
+    </h2>
+    <div
+      class="error-info  "
+      data-testid=""
+      role="alert"
+    >
+      <h3
+        class="error-info__description"
+      >
+        Не удалось загрузить данные о вашем городе
+      </h3>
+    </div>
+  </section>
+  <section
+    class="hourly-weather__section hourly-weather-section weather-board__hourly-weather"
+    data-testid=""
+  >
+    <h2
+      class="hourly-weather-section__title sr-only"
+    >
+      Погода на ближайщие 24 часа
+    </h2>
+    <div
+      class="error-info  "
+      data-testid=""
+      role="alert"
+    >
+      <h3
+        class="error-info__description"
+      >
+        Не удалось загрузить данные о погоде на ближайщие 24 часа
+      </h3>
+    </div>
+  </section>
+  <section
+    class="daily-weather__section daily-weather-section weather-board__daily-weather"
+    data-testid=""
+  >
+    <h2
+      class="daily-weather-section__title sr-only"
+    >
+      Погода на неделю
+    </h2>
+    <div
+      class="error-info  "
+      data-testid=""
+      role="alert"
+    >
+      <h3
+        class="error-info__description"
+      >
+        Не удалось загрузить данные о погоде на текущую неделю
+      </h3>
+    </div>
+  </section>
+  <section
+    class="weather-board__additional-info additional-info"
+  >
+    <h2
+      class="additional-info__title sr-only"
+    >
+      Информация об относительной влажности и ветре
+    </h2>
+    <div
+      class="humidity__section humidity-section weather-board__humidity"
+      data-testid=""
+    >
+      <div
+        class="error-info  "
+        data-testid=""
+        role="alert"
+      >
+        <h3
+          class="error-info__description"
+        >
+          Не удалось загрузить данные об относительной влажности
+        </h3>
+      </div>
+    </div>
+    <div
+      class="wind__section wind-section weather-board__wind"
+      data-testid=""
+    >
+      <div
+        class="error-info  "
+        data-testid=""
+        role="alert"
+      >
+        <h3
+          class="error-info__description"
+        >
+          Не удалось загрузить данные о ветре
+        </h3>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`WeatherBoard component tests snapshot with resolved data 1`] = `
+<div
+  class="weather-board "
+  data-testid="weather-board"
+>
+  <section
+    class="current-weather__section current-weather-section weather-board__current-weather"
+    data-testid=""
+  >
+    <h2
+      class="current-weather-section__title sr-only"
+    >
+      Текущая погода
+    </h2>
+    <div
+      class="current-weather "
+      data-testid=""
+    >
+      <p
+        class="current-weather__temperature"
+      >
+        -6.7°
+      </p>
+      <p
+        class="current-weather__status"
+      >
+        ясно
+      </p>
+    </div>
+  </section>
+  <section
+    class="location__section location-section weather-board__location-info"
+    data-testid=""
+  >
+    <h2
+      class="location-section__title sr-only"
+    >
+      Ваш город
+    </h2>
+    <p
+      class="location-info "
+      data-testid=""
+    >
+      <span
+        class="location-info__text"
+      >
+        Вестминстер
+      </span>
+      <img
+        alt="location icon"
+        class="location-info__icon"
+        src="/assets/icons/location.svg"
+      />
+    </p>
+  </section>
+  <section
+    class="hourly-weather__section hourly-weather-section weather-board__hourly-weather"
+    data-testid=""
+  >
+    <h2
+      class="hourly-weather-section__title sr-only"
+    >
+      Погода на ближайщие 24 часа
+    </h2>
+    <div
+      class="table-overlay "
+      data-testid=""
+    >
+      <div
+        class="table-container"
+      >
+        <table
+          class="table"
+        >
+          <thead
+            class="table__head"
+          >
+            <tr
+              class="table__row"
+            >
+              <th
+                class="table__head-cell"
+              >
+                9:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                10:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                11:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                12:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                13:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                14:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                15:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                16:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                17:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                18:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                19:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                20:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                21:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                22:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                23:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                0:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                1:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                2:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                3:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                4:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                5:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                6:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                7:00
+              </th>
+              <th
+                class="table__head-cell"
+              >
+                8:00
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="table__body"
+          >
+            <tr
+              class="table__row"
+            >
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="ясно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/sunny.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -4.5
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    ясно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -4.4
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -4.3
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="снег"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/snow.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -4.5
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    снег
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="снег"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/snow.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.1
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    снег
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.6
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.8
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -6
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -6.5
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -6.8
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="ясно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/sunny.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -7
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    ясно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -6.4
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="снег"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/snow.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.3
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    снег
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="дождь"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/rain.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -4.3
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    дождь
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="ясно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/sunny.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -3.6
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    ясно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="ясно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/sunny.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -3.4
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    ясно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -3.7
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -4.4
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -4.9
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="снег"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/snow.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.3
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    снег
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="снег"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/snow.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.6
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    снег
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.8
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="пасмурно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/cloudy.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.7
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    пасмурно
+                  </p>
+                </div>
+              </td>
+              <td
+                class="table__data-cell"
+              >
+                <div
+                  class="hourly-weather "
+                  data-testid=""
+                >
+                  <img
+                    alt="ясно"
+                    class="hourly-weather__icon"
+                    src="/assets/icons/sunny.svg"
+                  />
+                  <p
+                    class="hourly-weather__temperature"
+                  >
+                    -5.5
+                    °
+                  </p>
+                  <p
+                    class="hourly-weather__status"
+                  >
+                    ясно
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section
+    class="daily-weather__section daily-weather-section weather-board__daily-weather"
+    data-testid=""
+  >
+    <h2
+      class="daily-weather-section__title sr-only"
+    >
+      Погода на неделю
+    </h2>
+    <ul
+      class="list "
+    >
+      <li
+        class="list__item"
+      >
+        <div
+          class="daily-weather "
+          data-testid=""
+        >
+          <div
+            class="daily-weather__description"
+          >
+            <p
+              class="daily-weather__text"
+            >
+              вторник, 27 декабря
+            </p>
+          </div>
+          <img
+            alt="пасмурно"
+            class="daily-weather__icon"
+            src="/assets/icons/cloudy.svg"
+          />
+          <p
+            class="daily-weather__temperature"
+          >
+            <span
+              class="daily-weather__temperature--min"
+            >
+              -15.5
+              °
+            </span>
+             / 
+            <span
+              class="daily-weather__temperature--max"
+            >
+              -8
+              °
+            </span>
+          </p>
+        </div>
+      </li>
+      <li
+        class="list__item"
+      >
+        <div
+          class="daily-weather "
+          data-testid=""
+        >
+          <div
+            class="daily-weather__description"
+          >
+            <p
+              class="daily-weather__text"
+            >
+              четверг, 29 декабря
+            </p>
+          </div>
+          <img
+            alt="снег"
+            class="daily-weather__icon"
+            src="/assets/icons/snow.svg"
+          />
+          <p
+            class="daily-weather__temperature"
+          >
+            <span
+              class="daily-weather__temperature--min"
+            >
+              -16.4
+              °
+            </span>
+             / 
+            <span
+              class="daily-weather__temperature--max"
+            >
+              -7.3
+              °
+            </span>
+          </p>
+        </div>
+      </li>
+      <li
+        class="list__item"
+      >
+        <div
+          class="daily-weather "
+          data-testid=""
+        >
+          <div
+            class="daily-weather__description"
+          >
+            <p
+              class="daily-weather__text"
+            >
+              пятница, 30 декабря
+            </p>
+          </div>
+          <img
+            alt="пасмурно"
+            class="daily-weather__icon"
+            src="/assets/icons/cloudy.svg"
+          />
+          <p
+            class="daily-weather__temperature"
+          >
+            <span
+              class="daily-weather__temperature--min"
+            >
+              -17.5
+              °
+            </span>
+             / 
+            <span
+              class="daily-weather__temperature--max"
+            >
+              -5
+              °
+            </span>
+          </p>
+        </div>
+      </li>
+      <li
+        class="list__item"
+      >
+        <div
+          class="daily-weather "
+          data-testid=""
+        >
+          <div
+            class="daily-weather__description"
+          >
+            <p
+              class="daily-weather__text"
+            >
+              суббота, 31 декабря
+            </p>
+          </div>
+          <img
+            alt="пасмурно"
+            class="daily-weather__icon"
+            src="/assets/icons/cloudy.svg"
+          />
+          <p
+            class="daily-weather__temperature"
+          >
+            <span
+              class="daily-weather__temperature--min"
+            >
+              -15.7
+              °
+            </span>
+             / 
+            <span
+              class="daily-weather__temperature--max"
+            >
+              -6.7
+              °
+            </span>
+          </p>
+        </div>
+      </li>
+      <li
+        class="list__item"
+      >
+        <div
+          class="daily-weather "
+          data-testid=""
+        >
+          <div
+            class="daily-weather__description"
+          >
+            <p
+              class="daily-weather__text"
+            >
+              воскресенье, 1 января
+            </p>
+          </div>
+          <img
+            alt="пасмурно"
+            class="daily-weather__icon"
+            src="/assets/icons/cloudy.svg"
+          />
+          <p
+            class="daily-weather__temperature"
+          >
+            <span
+              class="daily-weather__temperature--min"
+            >
+              -16.3
+              °
+            </span>
+             / 
+            <span
+              class="daily-weather__temperature--max"
+            >
+              -7.6
+              °
+            </span>
+          </p>
+        </div>
+      </li>
+      <li
+        class="list__item"
+      >
+        <div
+          class="daily-weather "
+          data-testid=""
+        >
+          <div
+            class="daily-weather__description"
+          >
+            <p
+              class="daily-weather__text"
+            >
+              понедельник, 2 января
+            </p>
+          </div>
+          <img
+            alt="снег"
+            class="daily-weather__icon"
+            src="/assets/icons/snow.svg"
+          />
+          <p
+            class="daily-weather__temperature"
+          >
+            <span
+              class="daily-weather__temperature--min"
+            >
+              -13.6
+              °
+            </span>
+             / 
+            <span
+              class="daily-weather__temperature--max"
+            >
+              -9.8
+              °
+            </span>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section
+    class="weather-board__additional-info additional-info"
+  >
+    <h2
+      class="additional-info__title sr-only"
+    >
+      Информация об относительной влажности и ветре
+    </h2>
+    <div
+      class="humidity__section humidity-section weather-board__humidity"
+      data-testid=""
+    >
+      <div
+        class="humidity "
+        data-testid=""
+      >
+        <h3
+          class="humidity__title"
+        >
+          Относительная влажность
+        </h3>
+        <div
+          class="humidity__content"
+        >
+          <div
+            class="pie-chart humidity__pie-chart"
+            data-testid=""
+          >
+            <svg
+              class="pie-chart__icon"
+              fill="none"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                class="pie-chart__circle"
+                cx="255"
+                cy="255"
+                r="245.25"
+              />
+              <circle
+                class="pie-chart__circle"
+                cx="255"
+                cy="255"
+                r="245.25"
+                style="--value: 84;"
+              />
+            </svg>
+            <p
+              class="pie-chart__text"
+            >
+              84
+              %
+            </p>
+          </div>
+          <p
+            class="humidity__apparent-temperature"
+          >
+            Ощущаемая температура:
+             
+            -19.1°
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="wind__section wind-section weather-board__wind"
+      data-testid=""
+    >
+      <div
+        class="wind "
+        data-testid=""
+      >
+        <h3
+          class="wind__title"
+        >
+          Ветер
+        </h3>
+        <div
+          class="wind__content"
+        >
+          <svg
+            class="wind__icon"
+            fill="none"
+            viewBox=" 0 0 850 850"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M464.387 409.738c7.981-9.277 12.804-21.348 12.804-34.546 0-29.271-23.729-53-53-53s-53 23.729-53 53a52.769 52.769 0 0 0 10.626 31.84l-28.143 31.105-1.441 1.593-.208 2.138-29.964 307.63h-34.567v13h274.5v-13h-34.066l-29.964-307.63-.209-2.138-1.441-1.593-28.5-31.5-3.427 3.101Zm-5.953 5.909a52.787 52.787 0 0 1-34.243 12.545 52.781 52.781 0 0 1-33.325-11.785l-26.111 28.859-29.633 304.232h179.744l-29.633-304.232-26.799-29.619Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+            <path
+              class="wind__blades"
+              clip-rule="evenodd"
+              d="m710.884 169.192-4.597 4.596-4 4-146.999 147-1.5 1.5-4.597 4.596-4.596-4.596-72-72-4.596-4.596 4.596-4.596 2-2 118-118 32.5-32.5L629.691 88l4.597 4.596 12.499 12.5 59.5 59.5 4.597 4.596Zm-18.385 0-54.904-54.903-7.904-7.904-27.903 27.903-115.404 115.404 62.807 62.808 143.308-143.308ZM344.788 462.788l.193-.193.5.5 79.211-79.211 79.903 79.904.25-.25.053.053 9.193-9.193-79.957-79.956 79.154-79.154-9.193-9.192-.807.807-.5-.5-78.346 78.346-78.154-78.153-9.192 9.192 2.057 2.057-.25.25 76.096 76.097-79.403 79.403 9.192 9.193ZM138 579.691l4.596-4.596 4-4 147-146.999 1.5-1.5 4.596-4.597 4.596 4.597 72 71.999 4.596 4.597-4.596 4.596-2 2-118 117.999-32.5 32.5-4.596 4.597-4.596-4.597-12.5-12.5-59.5-59.499-4.596-4.597Zm18.385 0 54.903 54.904 7.904 7.904 27.904-27.904L362.5 499.192l-62.808-62.808-143.307 143.307ZM220.192 89l4.596 4.596 4 4 147 147 1.5 1.5 4.596 4.596-4.596 4.596-72 72-4.596 4.596-4.596-4.596-2-2-118-118-32.5-32.5-4.596-4.596 4.596-4.596 12.5-12.5 59.5-59.5L220.192 89Zm0 18.385-54.903 54.903-7.904 7.904 27.903 27.904L300.692 313.5l62.808-62.808-143.308-143.307Zm410.499 553.999-4.596-4.597-4-4-147-146.999-1.5-1.5-4.596-4.596 4.596-4.597 72-71.999 4.596-4.597 4.597 4.597 2 2 117.999 117.999 32.5 32.5 4.597 4.596-4.597 4.597-12.5 12.5-59.499 59.499-4.597 4.597Zm0-18.385 54.904-54.904 7.904-7.904-27.904-27.903-115.404-115.404-62.807 62.808 143.307 143.307Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <div
+            class="wind__text"
+          >
+            <p
+              class="wind__speed"
+            >
+              Скорость:
+               
+              1.64
+              м/с
+            </p>
+            <p
+              class="wind__direction"
+            >
+              Направление:
+               
+              Юго-восток
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
