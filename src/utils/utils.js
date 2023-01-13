@@ -231,3 +231,22 @@ export const normalizeHourlyWeather = (data) => {
 
   return hourlyWeather;
 };
+
+export const normalizeHumidity = (data) => {
+  if (!isObject(data)) {
+    throw new Error('the data parameter must be an object');
+  }
+  if (Object.keys(data).length === 0) return null;
+
+  const currentTimeIndex = getCurrentISOTimeIndex(data.time);
+
+  if (currentTimeIndex < 0) return null;
+
+  const apparentTemperature = data.apparent_temperature[currentTimeIndex];
+  const relativeHumidity = data.relativehumidity_2m[currentTimeIndex];
+
+  return {
+    apparentTemperature,
+    relativeHumidity,
+  };
+};
