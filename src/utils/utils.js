@@ -170,3 +170,27 @@ export const getCurrentISOTimeIndex = (timeArr) => {
     timeMoment === currentISOTime
   ));
 };
+
+export const normalizeDailyWeather = (data) => {
+  if (!isObject(data)) {
+    throw new Error('the data parameter must be an object');
+  }
+  if (Object.keys(data).length === 0) return null;
+
+  const daysInWeek = 7;
+  const dailyWeather = [];
+
+  for (let i = 1; i < daysInWeek; i += 1) {
+    const weather = {
+      id: data.time[i],
+      day: data.time[i],
+      temperatureMin: data.temperature_2m_min[i],
+      temperatureMax: data.temperature_2m_max[i],
+      weatherCode: data.weathercode[i],
+    };
+
+    dailyWeather.push(weather);
+  }
+
+  return dailyWeather;
+};
