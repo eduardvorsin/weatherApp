@@ -98,3 +98,7 @@ export const getWindDirectionNameByAngle = (angle) => {
 
   return 'Неизвестно';
 };
+
+export const isObject = (value) => (
+  typeof value === 'object' && !Array.isArray(value) && value !== null
+);
