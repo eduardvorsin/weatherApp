@@ -127,3 +127,33 @@ export const createReverseGeocodingURL = (queries = {
 
   return url;
 };
+
+export const createWeatherURL = (queries = {
+  latitude: '51.47',
+  longitude: '0.00',
+  current_weather: false,
+  hourly: ['windspeed_10m', 'temperature_2m'],
+}, baseUrl = 'https://api.open-meteo.com/v1/forecast') => {
+  if (!isObject(queries)) {
+    throw new Error('the queries parameter must be an object');
+  }
+  if (typeof baseUrl !== 'string') {
+    throw new Error('baseUrl parameter should be a string type');
+  }
+
+  const url = new URL(baseUrl);
+  url.searchParams.append('timezone', 'auto');
+  url.searchParams.append('windspeed_unit', 'ms');
+
+  Object.keys(queries).forEach((key) => {
+    if (queries[key] instanceof Array) {
+      queries[key].forEach((parameter) => {
+        url.searchParams.append(key, parameter);
+      });
+    } else {
+      url.searchParams.append(key, queries[key]);
+    }
+  });
+
+  return url;
+};
