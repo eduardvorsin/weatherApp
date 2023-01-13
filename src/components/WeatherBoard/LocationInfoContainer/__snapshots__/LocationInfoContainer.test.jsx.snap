@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationInfoContainer component tests snapshot with a spinner 1`] = `
+<section
+  class="location__section location-section test-class"
+  data-testid="location-info"
+>
+  <h2
+    class="location-section__title sr-only"
+  >
+    Ваш город
+  </h2>
+  <div
+    aria-label="loading spinner"
+    class="spinner "
+    style="--size: 74px;"
+    title="loading spinner"
+  >
+    <div
+      class="spinner__ring"
+      style="--ring-size: 59.2px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 59.2px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 59.2px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 59.2px;"
+    />
+  </div>
+</section>
+`;
+
+exports[`LocationInfoContainer component tests snapshot with mock data 1`] = `
+<section
+  class="location__section location-section test-class"
+  data-testid="location-info"
+>
+  <h2
+    class="location-section__title sr-only"
+  >
+    Ваш город
+  </h2>
+  <p
+    class="location-info "
+    data-testid=""
+  >
+    <span
+      class="location-info__text"
+    >
+      Вестминстер
+    </span>
+    <img
+      alt="location icon"
+      class="location-info__icon"
+      src="/assets/icons/location.svg"
+    />
+  </p>
+</section>
+`;
+
+exports[`LocationInfoContainer component tests snapshot with mock error 1`] = `
+<section
+  class="location__section location-section test-class"
+  data-testid="location-info"
+>
+  <h2
+    class="location-section__title sr-only"
+  >
+    Ваш город
+  </h2>
+  <div
+    class="error-info  "
+    data-testid=""
+    role="alert"
+  >
+    <h3
+      class="error-info__description"
+    >
+      Не удалось загрузить данные о вашем городе
+    </h3>
+  </div>
+</section>
+`;
+
+exports[`LocationInfoContainer component tests snapshot without anything 1`] = `
+<section
+  class="location__section location-section test-class"
+  data-testid="location-info"
+>
+  <h2
+    class="location-section__title sr-only"
+  >
+    Ваш город
+  </h2>
+</section>
+`;
