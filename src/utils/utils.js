@@ -102,3 +102,28 @@ export const getWindDirectionNameByAngle = (angle) => {
 export const isObject = (value) => (
   typeof value === 'object' && !Array.isArray(value) && value !== null
 );
+
+export const createReverseGeocodingURL = (queries = {
+  lat: '51.47',
+  lon: '0.00',
+  zoom: '10',
+  format: 'jsonv2',
+  'accept-language': 'ru',
+}, baseUrl = 'https://nominatim.openstreetmap.org/reverse') => {
+  if (!isObject(queries)) {
+    throw new Error('the queries parameter must be an object');
+  }
+  if (typeof baseUrl !== 'string') {
+    throw new Error('baseUrl parameter should be a string type');
+  }
+
+  const url = new URL(baseUrl);
+
+  Object.keys(queries).forEach((param) => {
+    if (!Array.isArray(param)) {
+      url.searchParams.append(param, queries[param]);
+    }
+  });
+
+  return url;
+};
