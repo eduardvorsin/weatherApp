@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DailyWeather component tests snapshot with default data 1`] = `
+<div
+  class="daily-weather "
+  data-testid="daily-weather"
+>
+  <div
+    class="daily-weather__description"
+  >
+    <p
+      class="daily-weather__text"
+    >
+      воскресенье, 1 января
+    </p>
+  </div>
+  <img
+    alt="ясно"
+    class="daily-weather__icon"
+    src="/assets/icons/sunny.svg"
+  />
+  <p
+    class="daily-weather__temperature"
+  >
+    <span
+      class="daily-weather__temperature--min"
+    >
+      0
+      °
+    </span>
+     / 
+    <span
+      class="daily-weather__temperature--max"
+    >
+      0
+      °
+    </span>
+  </p>
+</div>
+`;
+
+exports[`DailyWeather component tests snapshot with mock text 1`] = `
+<div
+  class="daily-weather test-class"
+  data-testid="daily-weather"
+>
+  <div
+    class="daily-weather__description"
+  >
+    <p
+      class="daily-weather__text"
+    >
+      понедельник, 2 января
+    </p>
+  </div>
+  <img
+    alt="ясно"
+    class="daily-weather__icon"
+    src="/assets/icons/sunny.svg"
+  />
+  <p
+    class="daily-weather__temperature"
+  >
+    <span
+      class="daily-weather__temperature--min"
+    >
+      -23
+      °
+    </span>
+     / 
+    <span
+      class="daily-weather__temperature--max"
+    >
+      -6
+      °
+    </span>
+  </p>
+</div>
+`;
