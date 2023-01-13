@@ -194,3 +194,10 @@ export const normalizeDailyWeather = (data) => {
 
   return dailyWeather;
 };
+
+export const normalizeHours = (data) => {
+  if (!data || data.length === 0) return null;
+
+  const hours = Object.keys(data[0].data);
+  return hours.map((timeMoment) => ({ name: timeMoment }));
+};
