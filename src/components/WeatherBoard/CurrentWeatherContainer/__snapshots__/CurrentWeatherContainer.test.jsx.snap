@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentWeatherContainer component tests snapshot with a spinner 1`] = `
+<section
+  class="current-weather__section current-weather-section test-class"
+  data-testid="current-weather"
+>
+  <h2
+    class="current-weather-section__title sr-only"
+  >
+    Текущая погода
+  </h2>
+  <div
+    aria-label="loading spinner"
+    class="spinner "
+    style="--size: 102px;"
+    title="loading spinner"
+  >
+    <div
+      class="spinner__ring"
+      style="--ring-size: 81.60000000000001px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 81.60000000000001px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 81.60000000000001px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 81.60000000000001px;"
+    />
+  </div>
+</section>
+`;
+
+exports[`CurrentWeatherContainer component tests snapshot with mock data 1`] = `
+<section
+  class="current-weather__section current-weather-section test-class"
+  data-testid="current-weather"
+>
+  <h2
+    class="current-weather-section__title sr-only"
+  >
+    Текущая погода
+  </h2>
+  <div
+    class="current-weather "
+    data-testid=""
+  >
+    <p
+      class="current-weather__temperature"
+    >
+      -6.7°
+    </p>
+    <p
+      class="current-weather__status"
+    >
+      ясно
+    </p>
+  </div>
+</section>
+`;
+
+exports[`CurrentWeatherContainer component tests snapshot with mock error 1`] = `
+<section
+  class="current-weather__section current-weather-section test-class"
+  data-testid="current-weather"
+>
+  <h2
+    class="current-weather-section__title sr-only"
+  >
+    Текущая погода
+  </h2>
+  <div
+    class="error-info  "
+    data-testid=""
+    role="alert"
+  >
+    <h3
+      class="error-info__description"
+    >
+      Не удалось загрузить данные о текущей погоде
+    </h3>
+  </div>
+</section>
+`;
+
+exports[`CurrentWeatherContainer component tests snapshot without anything 1`] = `
+<section
+  class="current-weather__section current-weather-section test-class"
+  data-testid="current-weather"
+>
+  <h2
+    class="current-weather-section__title sr-only"
+  >
+    Текущая погода
+  </h2>
+</section>
+`;
