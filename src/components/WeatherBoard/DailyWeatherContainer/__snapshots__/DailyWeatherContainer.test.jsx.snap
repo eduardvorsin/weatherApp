@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DailyWeatherContainer component tests snapshot with a spinner 1`] = `
+<section
+  class="daily-weather__section daily-weather-section test-class"
+  data-testid="daily-weather"
+>
+  <h2
+    class="daily-weather-section__title sr-only"
+  >
+    Погода на неделю
+  </h2>
+  <div
+    aria-label="loading spinner"
+    class="spinner "
+    style="--size: 382px;"
+    title="loading spinner"
+  >
+    <div
+      class="spinner__ring"
+      style="--ring-size: 305.6px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 305.6px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 305.6px;"
+    />
+    <div
+      class="spinner__ring"
+      style="--ring-size: 305.6px;"
+    />
+  </div>
+</section>
+`;
+
+exports[`DailyWeatherContainer component tests snapshot with mock data 1`] = `
+<section
+  class="daily-weather__section daily-weather-section test-class"
+  data-testid="daily-weather"
+>
+  <h2
+    class="daily-weather-section__title sr-only"
+  >
+    Погода на неделю
+  </h2>
+  <ul
+    class="list "
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class="daily-weather "
+        data-testid=""
+      >
+        <div
+          class="daily-weather__description"
+        >
+          <p
+            class="daily-weather__text"
+          >
+            вторник, 27 декабря
+          </p>
+        </div>
+        <img
+          alt="пасмурно"
+          class="daily-weather__icon"
+          src="/assets/icons/cloudy.svg"
+        />
+        <p
+          class="daily-weather__temperature"
+        >
+          <span
+            class="daily-weather__temperature--min"
+          >
+            -15.5
+            °
+          </span>
+           / 
+          <span
+            class="daily-weather__temperature--max"
+          >
+            -8
+            °
+          </span>
+        </p>
+      </div>
+    </li>
+    <li
+      class="list__item"
+    >
+      <div
+        class="daily-weather "
+        data-testid=""
+      >
+        <div
+          class="daily-weather__description"
+        >
+          <p
+            class="daily-weather__text"
+          >
+            четверг, 29 декабря
+          </p>
+        </div>
+        <img
+          alt="снег"
+          class="daily-weather__icon"
+          src="/assets/icons/snow.svg"
+        />
+        <p
+          class="daily-weather__temperature"
+        >
+          <span
+            class="daily-weather__temperature--min"
+          >
+            -16.4
+            °
+          </span>
+           / 
+          <span
+            class="daily-weather__temperature--max"
+          >
+            -7.3
+            °
+          </span>
+        </p>
+      </div>
+    </li>
+    <li
+      class="list__item"
+    >
+      <div
+        class="daily-weather "
+        data-testid=""
+      >
+        <div
+          class="daily-weather__description"
+        >
+          <p
+            class="daily-weather__text"
+          >
+            пятница, 30 декабря
+          </p>
+        </div>
+        <img
+          alt="пасмурно"
+          class="daily-weather__icon"
+          src="/assets/icons/cloudy.svg"
+        />
+        <p
+          class="daily-weather__temperature"
+        >
+          <span
+            class="daily-weather__temperature--min"
+          >
+            -17.5
+            °
+          </span>
+           / 
+          <span
+            class="daily-weather__temperature--max"
+          >
+            -5
+            °
+          </span>
+        </p>
+      </div>
+    </li>
+    <li
+      class="list__item"
+    >
+      <div
+        class="daily-weather "
+        data-testid=""
+      >
+        <div
+          class="daily-weather__description"
+        >
+          <p
+            class="daily-weather__text"
+          >
+            суббота, 31 декабря
+          </p>
+        </div>
+        <img
+          alt="пасмурно"
+          class="daily-weather__icon"
+          src="/assets/icons/cloudy.svg"
+        />
+        <p
+          class="daily-weather__temperature"
+        >
+          <span
+            class="daily-weather__temperature--min"
+          >
+            -15.7
+            °
+          </span>
+           / 
+          <span
+            class="daily-weather__temperature--max"
+          >
+            -6.7
+            °
+          </span>
+        </p>
+      </div>
+    </li>
+    <li
+      class="list__item"
+    >
+      <div
+        class="daily-weather "
+        data-testid=""
+      >
+        <div
+          class="daily-weather__description"
+        >
+          <p
+            class="daily-weather__text"
+          >
+            воскресенье, 1 января
+          </p>
+        </div>
+        <img
+          alt="пасмурно"
+          class="daily-weather__icon"
+          src="/assets/icons/cloudy.svg"
+        />
+        <p
+          class="daily-weather__temperature"
+        >
+          <span
+            class="daily-weather__temperature--min"
+          >
+            -16.3
+            °
+          </span>
+           / 
+          <span
+            class="daily-weather__temperature--max"
+          >
+            -7.6
+            °
+          </span>
+        </p>
+      </div>
+    </li>
+    <li
+      class="list__item"
+    >
+      <div
+        class="daily-weather "
+        data-testid=""
+      >
+        <div
+          class="daily-weather__description"
+        >
+          <p
+            class="daily-weather__text"
+          >
+            понедельник, 2 января
+          </p>
+        </div>
+        <img
+          alt="снег"
+          class="daily-weather__icon"
+          src="/assets/icons/snow.svg"
+        />
+        <p
+          class="daily-weather__temperature"
+        >
+          <span
+            class="daily-weather__temperature--min"
+          >
+            -13.6
+            °
+          </span>
+           / 
+          <span
+            class="daily-weather__temperature--max"
+          >
+            -9.8
+            °
+          </span>
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`DailyWeatherContainer component tests snapshot with mock error 1`] = `
+<section
+  class="daily-weather__section daily-weather-section test-class"
+  data-testid="daily-weather"
+>
+  <h2
+    class="daily-weather-section__title sr-only"
+  >
+    Погода на неделю
+  </h2>
+  <div
+    class="error-info  "
+    data-testid=""
+    role="alert"
+  >
+    <h3
+      class="error-info__description"
+    >
+      Не удалось загрузить данные о погоде на текущую неделю
+    </h3>
+  </div>
+</section>
+`;
+
+exports[`DailyWeatherContainer component tests snapshot without anything 1`] = `
+<section
+  class="daily-weather__section daily-weather-section test-class"
+  data-testid="daily-weather"
+>
+  <h2
+    class="daily-weather-section__title sr-only"
+  >
+    Погода на неделю
+  </h2>
+</section>
+`;
