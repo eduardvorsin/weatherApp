@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HourlyWeather component tests snapshot with default data 1`] = `
+<div
+  class="hourly-weather "
+  data-testid="hourly-weather"
+>
+  <img
+    alt="ясно"
+    class="hourly-weather__icon"
+    src="/assets/icons/sunny.svg"
+  />
+  <p
+    class="hourly-weather__temperature"
+  >
+    0
+    °
+  </p>
+  <p
+    class="hourly-weather__status"
+  >
+    ясно
+  </p>
+</div>
+`;
+
+exports[`HourlyWeather component tests snapshot with mock text 1`] = `
+<div
+  class="hourly-weather test-class"
+  data-testid="hourly-weather"
+>
+  <img
+    alt="ясно"
+    class="hourly-weather__icon"
+    src="/assets/icons/sunny.svg"
+  />
+  <p
+    class="hourly-weather__temperature"
+  >
+    -30
+    °
+  </p>
+  <p
+    class="hourly-weather__status"
+  >
+    ясно
+  </p>
+</div>
+`;
