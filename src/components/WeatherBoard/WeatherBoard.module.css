@@ -1,0 +1,59 @@
+.weather-board {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-board__header>button {
+  font-size: 0;
+  padding: 5px;
+}
+
+.weather-board__current-weather {
+  align-self: center;
+  margin-bottom: clamp(1.25rem, 1.1vw + 1rem, 2.188rem);
+}
+
+.weather-board__location-info {
+  align-self: center;
+  margin-bottom: clamp(1.563rem, 2vw + 1rem, 3.125rem);
+}
+
+.weather-board__hourly-weather {
+  margin-bottom: clamp(2.5rem, 3vw + 1.75rem, 5rem);
+}
+
+.weather-board__daily-weather {
+  margin-bottom: clamp(1.563rem, 2vw + 1rem, 3.125rem);
+}
+
+.weather-board__additional-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.weather-board__additional-info>*:not(:last-child) {
+  margin-bottom: clamp(1.563rem, 2.9vw + 1rem, 4.375rem);
+}
+
+.weather-board__humidity,
+.weather-board__wind {
+  flex: 0 1 100%;
+}
+
+@media(min-width:769px) {
+  .weather-board__additional-info>*:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: clamp(1.563rem, 2.9vw + 1rem, 4.375rem);
+  }
+
+  .weather-board__additional-info {
+    flex-wrap: nowrap;
+  }
+
+  .weather-board__humidity,
+  .weather-board__wind {
+    flex: 0 1 50%;
+  }
+}
