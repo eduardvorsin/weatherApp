@@ -83,3 +83,18 @@ export const getFullDayDescription = (date) => {
 
   return new Intl.DateTimeFormat('ru-RU', options).format(new Date(date));
 };
+
+export const getWindDirectionNameByAngle = (angle) => {
+  if (Number.isNaN(+angle)) throw Error('angle value must be a number');
+
+  if (angle === 0 || angle === 360) return 'Север';
+  if (angle > 0 && angle < 90) return 'Северо-восток';
+  if (angle === 90) return 'Восток';
+  if (angle > 90 && angle < 180) return 'Юго-восток';
+  if (angle === 180) return 'Юг';
+  if (angle > 180 && angle < 270) return 'Юго-Запад';
+  if (angle === 270) return 'Запад';
+  if (angle > 270 && angle < 360) return 'Северо-запад';
+
+  return 'Неизвестно';
+};
