@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationError component tests default snapshot of component 1`] = `
+<div
+  class="error-info  error-info--center"
+  data-testid="location-error"
+  role="alert"
+>
+  <div
+    class="error-info__icon-wrapper"
+  >
+    <svg
+      fill="none"
+      viewBox="0 0 50 50"
+    >
+      <path
+        d="M40 17c0 13.604-15 31-15 31S10 30.928 10 17c0-8.285 6.715-15 15-15 8.284 0 15 6.715 15 15Z"
+        stroke="currentColor"
+        stroke-linejoin="round"
+        stroke-miterlimit="10"
+        stroke-width="1.765"
+      />
+      <path
+        d="M25 24a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"
+        stroke="currentColor"
+        stroke-linejoin="round"
+        stroke-miterlimit="10"
+        stroke-width="1.765"
+      />
+      <path
+        d="M10 2.5 40 48"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-width="1.76"
+      />
+    </svg>
+  </div>
+  <h2
+    class="error-info__description"
+  >
+    Нет доступа к вашему местоположению, попробуйте предоставить доступ и перезагрузить страницу
+  </h2>
+</div>
+`;
